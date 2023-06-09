@@ -26,7 +26,7 @@ while(true) {
         //Le msg client
         String mensagem = in.readLine();
         System.out.println("Broadcast recebido pelo cliente em:" + mensagem);
-
+        System.out.println("Enviando resposta deste servidor ("+String.valueOf(InetAddress.getLocalHost())+")");
         out.println(String.valueOf(InetAddress.getLocalHost()));
 
         in.close();
